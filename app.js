@@ -1,5 +1,10 @@
-$(document).ready(function() {
-  console.log("app.js is loaded");
-
+function toggleLinks() {
+  $('#login').toggle();
   $('#logout').toggle();
+}
+
+$(document).ready(function() {
+
+  $('#login').click(toggleLinks);
+  $('#logout').click(toggleLinks);
 });
